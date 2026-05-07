@@ -25,7 +25,8 @@ dist/
 !.env.example
 
 # Editor & IDE
-.vscode/
+# NOTE: .vscode/ is intentionally tracked in this repository
+# because this repo stores reusable editor configuration files.
 .idea/
 *.sublime-project
 *.sublime-workspace

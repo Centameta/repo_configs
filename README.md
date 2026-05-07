@@ -1,11 +1,11 @@
-# template-repo
+# dev_configs
 
-A clean, multi-purpose project template for **Python · Rust · Web · Mobile · AI/ML · Agentic** solutions.
+A shared configuration repository for **Python · Rust · Web · Mobile · AI/ML · Agentic** projects.
 
 ## Repository Structure
 
 ```
-template-repo/
+dev_configs/
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
 │   │   ├── bug_report.md           # Bug report template
@@ -13,10 +13,28 @@ template-repo/
 │   ├── workflows/
 │   │   ├── ci.yml                  # CI pipeline (enable steps for your stack)
 │   │   └── source-branch-check.yml # Enforces PRs to main come from development
-│   └── PULL_REQUEST_TEMPLATE.md
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   └── copilot-instructions.md    # Copilot / agent guidance
+├── .config/
+│   ├── ohmyposh/centa.omp.json    # oh-my-posh theme config
+│   ├── powershell/                # PowerShell profile templates
+│   └── ubuntu-terminal/           # Ubuntu terminal profile templates
+├── .ssh/config.example            # SSH config template
+├── .vscode/                       # Shared VS Code settings/extensions/launch
+├── .cargo/config.toml             # Rust cargo defaults
+├── cmake/CMakePresets.json        # CMake presets
+├── docker/
+│   ├── Dockerfile.dev
+│   └── docker-compose.yml
+├── hooks/pre-commit               # Optional local hook template
+├── .editorconfig
+├── .clang-format
+├── .prettierrc.json
+├── .prettierignore
+├── .env.example
 ├── docs/
 │   └── getting-started.md          # Step-by-step setup guide
-├── .gitignore                      # Covers Python, Rust, Web, Mobile, AI/ML
+├── .gitignore                      # Covers C/C++, Python, Qt, JS, Node, Rust, Wasm, web & mobile
 ├── centa_ruleset.json              # Branch-protection rulesets (import into GitHub)
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
@@ -34,9 +52,10 @@ template-repo/
 ## Quick Start
 
 1. Click **"Use this template"** to create a new repository.
-2. See **[docs/getting-started.md](docs/getting-started.md)** for language-specific setup steps.
-3. Uncomment the relevant block in **`.github/workflows/ci.yml`** for your stack.
-4. Import branch-protection rulesets from **`centa_ruleset.json`** (see [Branch Protection](#branch-protection) below).
+2. Copy the config files you need into your project (for example `.editorconfig`, `.vscode/`, `hooks/pre-commit`, docker files, or formatter configs).
+3. See **[docs/getting-started.md](docs/getting-started.md)** for language-specific setup steps.
+4. Uncomment the relevant block in **`.github/workflows/ci.yml`** for your stack.
+5. Import branch-protection rulesets from **`centa_ruleset.json`** (see [Branch Protection](#branch-protection) below).
 
 ## Branch Protection
 
