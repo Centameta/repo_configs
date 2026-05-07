@@ -12,6 +12,6 @@ fi
 if command -v clang-format >/dev/null 2>&1; then
   CHANGED_CPP=$(git diff --cached --name-only -- '*.c' '*.cc' '*.cpp' '*.h' '*.hpp' || true)
   if [ -n "$CHANGED_CPP" ]; then
-    echo "$CHANGED_CPP" | xargs -r clang-format --dry-run --Werror
+    echo "$CHANGED_CPP" | xargs clang-format --dry-run --Werror
   fi
 fi
