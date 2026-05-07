@@ -1,19 +1,26 @@
 # Getting Started
 
-This is a template repository. Follow these steps to spin up a new project from it.
+This is a shared configuration repository. Follow these steps to copy the parts you need into your project.
 
 ## 1. Use the Template
 
-Click **"Use this template"** on GitHub and create a new repository for your project.
+Clone this repository or download the files you need.
 
-## 2. Clone Your New Repo
+## 2. Pick and Copy Config Files
 
 ```bash
-git clone https://github.com/<org>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/Centameta/dev_configs.git
+cd dev_configs
 ```
 
-## 3. Set Up Your Development Branch
+Copy the required files into your project, for example:
+- `.vscode/` for editor defaults
+- `.editorconfig`, `.prettierrc.json`, `.clang-format` for formatting
+- `hooks/pre-commit` for local hook setup
+- `docker/` for dev container baseline
+- `.config/` and `.ssh/config.example` for shell/terminal/SSH templates
+
+## 3. Set Up Your Project Development Branch
 
 The branching model uses two core branches:
 

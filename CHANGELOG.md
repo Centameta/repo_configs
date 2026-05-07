@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Initial repository structure and template files
+- Shared developer configuration templates:
+  - `.vscode/` settings, extensions, launch templates
+  - `.editorconfig`, `.prettierrc.json`, `.clang-format`
+  - Docker dev baseline (`docker/Dockerfile.dev`, `docker/docker-compose.yml`)
+  - Optional local `hooks/pre-commit`
+  - `.config/` templates for oh-my-posh, PowerShell, and Ubuntu terminal
+  - `.ssh/config.example`, `.env.example`, `.cargo/config.toml`, and `cmake/CMakePresets.json`
 
 ---
 
