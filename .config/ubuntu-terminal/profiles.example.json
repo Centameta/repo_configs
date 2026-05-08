@@ -1,0 +1,12 @@
+{
+  "default-profile": "Centa",
+  "profiles": [
+    {
+      "name": "Centa",
+      "font": "JetBrainsMono Nerd Font 12",
+      "use-system-font": false,
+      "cursor-shape": "ibeam",
+      "use-theme-colors": false
+    }
+  ]
+}

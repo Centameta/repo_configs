@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.black-formatter",
+    "charliermarsh.ruff",
+    "rust-lang.rust-analyzer",
+    "esbenp.prettier-vscode",
+    "ms-vscode.cpptools",
+    "ms-azuretools.vscode-docker",
+    "ms-vscode.cmake-tools"
+  ]
+}
