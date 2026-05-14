@@ -1,11 +1,11 @@
-# dev_configs
+# repo_configs
 
 A shared configuration repository for **Python · Rust · Web · Mobile · AI/ML · Agentic** projects.
 
 ## Repository Structure
 
 ```
-dev_configs/
+repo_configs/
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
 │   │   ├── bug_report.md           # Bug report template
